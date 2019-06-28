@@ -80,10 +80,12 @@ public class VideoPlayer extends FrameLayout {
             @Override
             public void surfaceCreated(SurfaceHolder surfaceHolder) {
 
+                //创建
             }
 
             @Override
             public void surfaceChanged(SurfaceHolder surfaceHolder, int i, int i1, int i2) {
+                //改变
                 if (mMediaPlayer != null) {
                     mMediaPlayer.setDisplay(surfaceHolder);
                 }
@@ -91,6 +93,8 @@ public class VideoPlayer extends FrameLayout {
 
             @Override
             public void surfaceDestroyed(SurfaceHolder surfaceHolder) {
+
+                //销毁
 
             }
         });
